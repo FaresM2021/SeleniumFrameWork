@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="nopcommerce Regression suite">
+<parameter name="browser" value="fireFox"></parameter>
+  <test name="Regression Test" preserve-order="false">
+    <classes>
+      <class name="tests.UserRegestrationTest"/>
+      <class name="tests.SearchProductsUsingAutoCompletTest"/>
+      <class name="tests.ContactUsTest"/>
+      <class name="tests.UserRegestrationTestWithDataAndExcel"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
