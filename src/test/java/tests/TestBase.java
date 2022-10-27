@@ -56,7 +56,6 @@ public class TestBase extends AbstractTestNGCucumberTests
 			options.addArguments("--headless");
 			options.addArguments("--window-size=1920,1080");
 			driver = new ChromeDriver(options);
-			
 		}
 
 		driver.manage().window().maximize();
@@ -64,7 +63,7 @@ public class TestBase extends AbstractTestNGCucumberTests
 		driver.navigate().to("https://demo.nopcommerce.com");
 	}
 
-
+	
 	@AfterSuite
 	public void stopDriver() 
 	{
